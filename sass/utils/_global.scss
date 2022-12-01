@@ -1,0 +1,16 @@
+body {
+  font-family: "Roboto", sans-serif;
+  color: #212121;
+}
+figure {
+  margin: 0px 0px;
+}
+.container {
+  /* box-sizing: border-box;
+          display: flex; */
+  max-width: 1200px;
+  width: 100%;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0 15px;
+}

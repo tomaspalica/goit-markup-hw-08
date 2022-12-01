@@ -1,0 +1,64 @@
+.clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  .clients__headline {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+  
+    color: #212121;
+    margin-top: 0px;
+    margin-bottom: 50px;
+  }
+  .clients__showcase {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    padding-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  .clients__list {
+    list-style-type: none;
+  }
+  .clients__logos {
+    --color1: var(--clients-color);
+  }
+  .clients__logos:hover {
+    --color1: var(--hover-color);
+    --color1: var(--hover-color);
+    outline-color: #2196f3;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .clients-link {
+    text-decoration: none;
+    color: var(--clients-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .clients__logos-container {
+    margin-right: 10px;
+    margin-bottom: 30px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 100%;
+    border-radius: 4px;
+    outline: 1px solid #afb1b8;
+    width: 170px;
+    height: 92px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .clients__logos-container:hover .clients__logos {
+    --color4: var(--hover-color);
+    --color1: var(--hover-color);
+  }
+  .clients__logos-container:hover {
+    outline-color: #2196f3;
+    cursor: pointer;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }

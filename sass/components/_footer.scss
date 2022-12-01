@@ -1,0 +1,115 @@
+.footer__section {
+  background-color: var(--background-color2);
+  width: 100%;
+}
+.footer__flex {
+  display: flex;
+}
+
+.footer__contacts-bellow {
+  padding-top: 20px;
+  padding-left: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.footer__contacts-bellow-links {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0.02em;
+  color: #757575;
+  &:hover {
+    color: #2196f3;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+.footer__contacts-bellow-wrapper {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.footer__contacts-bellow-address {
+  font-size: 14px;
+  line-height: 146%;
+  /* or 171% */
+
+  letter-spacing: 0.03em;
+
+  color: #ffffff;
+  font-style: normal;
+}
+.footer__contacts-bellow-list {
+  list-style-type: none;
+}
+
+.footer__registration {
+  display: flex;
+  margin-top: 48px;
+  margin-left: 68px;
+}
+.footer__registration-info {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  position: absolute;
+  color: #ffffff;
+  top: -40px;
+}
+.footer__registration-fieldset {
+  border-radius: 4px;
+  border-color: rgba(255, 255, 255, 0.3);
+  margin: 0px;
+  height: 100%;
+  padding: 0px;
+  width: 358px;
+  height: 50px;
+  position: relative;
+}
+.footer__registration-input {
+  width: 358px;
+  height: 47px;
+  border: 0;
+  background: transparent;
+  outline: 0;
+  color: rgba(255, 255, 255, 0.3);
+  padding-left: 16px;
+}
+.footer__registration-button {
+  width: 200px;
+  height: 50px;
+
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: 0px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+
+  letter-spacing: 0.06em;
+
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0px;
+  &:hover {
+    background-color: #757575;
+    color: #000000;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+.footer__registration-email-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 570px;
+}

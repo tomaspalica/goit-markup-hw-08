@@ -1,0 +1,126 @@
+.main-section {
+  background-color: var(--background-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  /* position: absolute;
+            width: 1600px;
+            height: 80px;
+            left: 0px;
+            top: 0px; */
+  border-bottom: 1px solid #ececec;
+  width: 100%;
+  height: 80px;
+}
+.header__flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navigation {
+  display: flex;
+}
+.navigation__menu {
+  display: flex;
+  width: 254px;
+  gap: 30px;
+
+  padding-left: 93px;
+  box-sizing: content-box;
+}
+
+.navigation__movement-links {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0.02em;
+  color: #212121;
+  position: relative;
+  &:hover {
+    color: #2196f3;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+.visited-a::after {
+  content: "";
+  position: absolute;
+
+  width: 100%;
+  height: 4px;
+  background-color: #2196f3;
+  bottom: -32px;
+  left: 0;
+}
+.visited-p::after {
+  content: "";
+  position: absolute;
+
+  width: 100%;
+  height: 4px;
+  background-color: #2196f3;
+  bottom: -32px;
+  left: 0;
+}
+.navigation__menu-list {
+  list-style-type: none;
+}
+
+.contacts {
+  display: flex;
+  gap: 50px;
+  width: auto;
+  padding-left: 0px;
+}
+.contacts__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.contacts__info {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0.02em;
+  color: #757575;
+  display: flex;
+  align-items: center;
+  &:hover {
+    color: #2196f3;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+.contacts__info:hover .contacts__icon {
+  fill: #2196f3;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contacts address {
+  font-size: 14px;
+  line-height: 146%;
+  /* or 171% */
+
+  letter-spacing: 0.03em;
+
+  color: #ffffff;
+}
+.contacts__list {
+  list-style-type: none;
+}
+
+.contacts__icon {
+  --color1: currentColor;
+  width: 16px;
+}
+
+.contatcs-width {
+  width: auto;
+}
+.contatcs-width span {
+  padding-left: 10px;
+}
