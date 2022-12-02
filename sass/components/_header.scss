@@ -15,17 +15,34 @@
 .header__flex {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .header__flex {
+    justify-content: space-around;
+    width: 100%;
+  }
 }
 .navigation {
   display: flex;
+}
+@media (min-width: 1200px) {
+  .navigation {
+    margin-left: 93px;
+    margin-right: 345px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1200px) {
+  .navigation {
+    margin-right: 83px;
+    margin-left: 88px;
+  }
 }
 .navigation__menu {
   display: flex;
   width: 254px;
   gap: 30px;
-
-  padding-left: 93px;
+  padding-left: 0px;
   box-sizing: content-box;
 }
 
@@ -70,9 +87,15 @@
 
 .contacts {
   display: flex;
-  gap: 50px;
+  gap: 30px;
   width: auto;
   padding-left: 0px;
+}
+@media (min-width: 768px) and (max-width: 1200px) {
+  .contacts {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
 }
 .contacts__list {
   display: flex;
