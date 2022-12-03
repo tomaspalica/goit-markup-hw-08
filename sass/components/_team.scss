@@ -18,11 +18,17 @@
 }
 .team__description {
   display: flex;
-  justify-content: space-between;
+
   padding: 0 0;
   margin: 0 0;
+  gap: 30px;
+  justify-content: center;
 }
-
+@media (max-width: 1200px) {
+  .team__description {
+    flex-wrap: wrap;
+  }
+}
 .team__member {
   background-color: #ffffff;
   border-radius: 0px 0px 4px 4px;
@@ -52,16 +58,16 @@
 
   color: #757575;
   margin-top: 0px;
-  margin-bottom: 0px;
+  margin-bottom: 16px;
   padding-top: 10px;
-  padding-bottom: 30px;
 }
 .team__social-media {
   display: flex;
-  padding-left: 32px;
+  padding-left: 0px;
+  justify-content: center;
+  gap: 10px;
 }
 .team__icons-background {
-  margin-right: 10px;
   margin-bottom: 30px;
   border-radius: 100%;
   &:hover {
@@ -76,4 +82,8 @@
 
 .team__list {
   list-style-type: none;
+}
+.team__img {
+  width: 100%;
+  height: auto;
 }

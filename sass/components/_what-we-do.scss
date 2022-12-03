@@ -1,7 +1,11 @@
 .what-we-do__section {
   background-color: var(--background-color);
 }
-
+@media (max-width: 1200px) {
+  .what-we-do__section {
+    display: none;
+  }
+}
 .what-we-do {
   padding-bottom: 94px;
 }

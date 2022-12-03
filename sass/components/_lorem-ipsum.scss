@@ -2,22 +2,30 @@
   background-color: var(--background-color);
   width: 100%;
 }
-@media (max-width: 480px) {
+@media (max-width: 1200px) {
   .lorem-ipsum {
-    flex-direction: column;
-    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+}
+@media (min-width: 1200px) {
+  .lorem-ipsum {
+    justify-content: space-between;
   }
 }
 .lorem-ipsum {
   display: flex;
-  justify-content: space-between;
+
   padding-left: 0px;
   margin-top: 94px;
   margin-bottom: 94px;
 }
-
+@media (max-width: 1200px) {
+  .lorem-ipsum {
+    justify-content: center;
+  }
+}
 .lorem-ipsum__images {
-  width: 270px;
   height: 120px;
   background-color: #f5f4fa;
   display: flex;
@@ -32,6 +40,11 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
+@media (max-width: 768px) {
+  .lorem-ipsum__titles {
+    text-align: center;
+  }
+}
 .lorem-ipsum__contents {
   font-size: 14px;
   line-height: 146%;
@@ -43,5 +56,11 @@
 }
 .lorem-ipsum__list {
   list-style-type: none;
-  width: 270px;
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  .lorem-ipsum__list {
+    width: 270px;
+  }
 }

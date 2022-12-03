@@ -18,6 +18,11 @@
   display: flex;
   align-items: center;
 }
+@media (min-width: 320px) and (max-width: 768px) {
+  .logo {
+    margin-right: auto;
+  }
+}
 .logo__wraper {
   display: flex;
 }

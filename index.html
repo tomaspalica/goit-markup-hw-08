@@ -133,32 +133,35 @@
                 </ul>
               </nav>
             </div>
-            <div class="contact-wrapper">
-              <ul class="contacts">
-                <li class="contacts__list">
-                  <a
-                    class="contacts__info contatcs-width"
-                    href="mailto:info@devstudio.com"
-                  >
-                    <svg class="contacts__icon" height="12px">
-                      <use href="./images/icons.svg#icon-envelope"></use>
-                    </svg>
-                    <span>info@devstudio.com</span>
-                  </a>
-                </li>
-                <li class="contacts__list">
-                  <a
-                    class="contacts__info contatcs-width"
-                    href="tel:+48111111111"
-                  >
-                    <svg class="contacts__icon" width="10px" height="16px">
-                      <use href="./images/icons.svg#icon-smartphone"></use>
-                    </svg>
-                    <span>+48 111 111 111</span></a
-                  >
-                </li>
-              </ul>
-            </div>
+            <button class="menu-icon">
+              <svg width="24px" height="16px">
+                <use href="./images/icons.svg#icon-menu"></use>
+              </svg>
+            </button>
+            <ul class="contacts">
+              <li class="contacts__list">
+                <a
+                  class="contacts__info contatcs-width"
+                  href="mailto:info@devstudio.com"
+                >
+                  <svg class="contacts__icon" height="12px">
+                    <use href="./images/icons.svg#icon-envelope"></use>
+                  </svg>
+                  <span>info@devstudio.com</span>
+                </a>
+              </li>
+              <li class="contacts__list">
+                <a
+                  class="contacts__info contatcs-width"
+                  href="tel:+48111111111"
+                >
+                  <svg class="contacts__icon" width="10px" height="16px">
+                    <use href="./images/icons.svg#icon-smartphone"></use>
+                  </svg>
+                  <span>+48 111 111 111</span></a
+                >
+              </li>
+            </ul>
           </div>
         </div>
       </section>
@@ -168,7 +171,7 @@
       <section class="order-section">
         <div class="container">
           <div class="order">
-            <h1 class="order__headline">
+            <h1 class="order__headline order__headline-wrapper">
               EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU
             </h1>
             <div class="button-spacing">
@@ -295,12 +298,37 @@
             <ul class="team__description">
               <li class="team__list">
                 <figure class="team__member">
-                  <img
-                    src="./images/jhon-doe1.jpg"
-                    alt="zdjęcie przedstawia jhon doe, uśmiechający sie mężczyzna z brodą krótkimi włosami i okularami"
-                    width="270"
-                    height="260"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/team/img1-lg@1x.jpg 1x,
+                        ./images/team/img1-lg@2x.jpg 2x
+                      "
+                      type="image/jpg" />
+
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/team/img1-md@1x.jpg 1x,
+                        ./images/team/img1-md@2x.jpg 2x
+                      "
+                      type="image/jpg" />
+
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/team/img1-sm@1x.jpg 1x,
+                        ./images/team/img1-sm@2x.jpg 2x
+                      "
+                      type="image/jpg" />
+                    <img
+                      class="team__img"
+                      src="./images/jhon-doe1.jpg"
+                      alt="zdjęcie przedstawia jhon doe, uśmiechający sie mężczyzna z brodą krótkimi włosami i okularami"
+                      width="270"
+                      height="260"
+                  /></picture>
                   <figcaption>
                     <h4 class="team__name">Jhon doe</h4>
                     <p class="team__function">Product Designer</p>
@@ -371,12 +399,37 @@
               </li>
               <li class="team__list">
                 <figure class="team__member">
-                  <img
-                    src="./images/jhon-doe2.jpg"
-                    alt=" zdjęcie przedstawia jhon doe, uśmiechającą się kobiete w okularach z długimi blond włosami"
-                    width="270"
-                    height="260"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/team/img2-lg@1x.jpg 1x,
+                        ./images/team/img2-lg@2x.jpg 2x
+                      "
+                      type="image/jpg" />
+
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/team/img2-md@1x.jpg 1x,
+                        ./images/team/img2-md@2x.jpg 2x
+                      "
+                      type="image/jpg" />
+
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/team/img2-sm@1x.jpg 1x,
+                        ./images/team/img2-sm@2x.jpg 2x
+                      "
+                      type="image/jpg" />
+                    <img
+                      class="team__img"
+                      src="./images/jhon-doe2.jpg"
+                      alt=" zdjęcie przedstawia jhon doe, uśmiechającą się kobiete w okularach z długimi blond włosami"
+                      width="270"
+                      height="260"
+                  /></picture>
                   <figcaption>
                     <h4 class="team__name">Jhon doe</h4>
                     <p class="team__function">Frontend Developer</p>
@@ -447,12 +500,37 @@
               </li>
               <li class="team__list">
                 <figure class="team__member">
-                  <img
-                    src="./images/jhon-doe3.jpg"
-                    alt=" zdjęcie przedstawia jhon doe,  uśmiechającego sie mężczyzne o krótkich włosach z brodą  "
-                    width="270"
-                    height="260"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/team/img3-lg@1x.jpg 1x,
+                        ./images/team/img3-lg@2x.jpg 2x
+                      "
+                      type="image/jpg" />
+
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/team/img3-md@1x.jpg 1x,
+                        ./images/team/img3-md@2x.jpg 2x
+                      "
+                      type="image/jpg" />
+
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/team/img3-sm@1x.jpg 1x,
+                        ./images/team/img3-sm@2x.jpg 2x
+                      "
+                      type="image/jpg" />
+                    <img
+                      class="team__img"
+                      src="./images/jhon-doe3.jpg"
+                      alt=" zdjęcie przedstawia jhon doe,  uśmiechającego sie mężczyzne o krótkich włosach z brodą  "
+                      width="270"
+                      height="260"
+                  /></picture>
                   <figcaption>
                     <h4 class="team__name">Jhon doe</h4>
                     <p class="team__function">Marketing</p>
@@ -523,12 +601,37 @@
               </li>
               <li class="team__list">
                 <figure class="team__member">
-                  <img
-                    src="./images/jhon-doe4.jpg"
-                    alt="zdjęcie przedstawia jhon doe, uśmiechający sie mężczyzna z brodą krótkimi włosami i okularami "
-                    width="270"
-                    height="260"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/team/img4-lg@1x.jpg 1x,
+                        ./images/team/img4-lg@2x.jpg 2x
+                      "
+                      type="image/jpg" />
+
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/team/img4-md@1x.jpg 1x,
+                        ./images/team/img4-md@2x.jpg 2x
+                      "
+                      type="image/jpg" />
+
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/team/img4-sm@1x.jpg 1x,
+                        ./images/team/img4-sm@2x.jpg 2x
+                      "
+                      type="image/jpg" />
+                    <img
+                      class="team__img"
+                      src="./images/jhon-doe4.jpg"
+                      alt="zdjęcie przedstawia jhon doe, uśmiechający sie mężczyzna z brodą krótkimi włosami i okularami "
+                      width="270"
+                      height="260"
+                  /></picture>
                   <h4 class="team__name">Jhon doe</h4>
                   <p class="team__function">UI Designer</p>
                   <ul class="team__social-media">
