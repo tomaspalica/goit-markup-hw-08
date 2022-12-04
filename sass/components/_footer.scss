@@ -5,7 +5,20 @@
 .footer__flex {
   display: flex;
 }
+@media (min-width: 320px) and (max-width: 1200px) {
+  .footer__flex {
+    flex-direction: column;
+  }
+}
 
+.footer__registration-form {
+  width: 100%;
+}
+@media (min-width: 320px) and (max-width: 1200px) {
+  .footer__registration-form {
+    text-align: center;
+  }
+}
 .footer__contacts-bellow {
   padding-top: 20px;
   padding-left: 0px;
@@ -46,8 +59,16 @@
 
 .footer__registration {
   display: flex;
-  margin-top: 48px;
-  margin-left: 68px;
+}
+@media (min-width: 320px) and (max-width: 1200px) {
+  .footer__registration {
+    justify-content: center;
+  }
+}
+@media (min-width: 1200px) {
+  .footer__registration {
+    margin-left: 68px;
+  }
 }
 .footer__registration-info {
   font-style: normal;
@@ -56,10 +77,10 @@
   line-height: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  position: absolute;
+  margin-bottom: 20px;
   color: #ffffff;
-  top: -40px;
 }
+
 .footer__registration-fieldset {
   border-radius: 4px;
   border-color: rgba(255, 255, 255, 0.3);
@@ -70,6 +91,11 @@
   height: 50px;
   position: relative;
 }
+@media (min-width: 320px) and (max-width: 1200px) {
+  .footer__registration-fieldset {
+    width: 100%;
+  }
+}
 .footer__registration-input {
   width: 358px;
   height: 47px;
@@ -78,6 +104,11 @@
   outline: 0;
   color: rgba(255, 255, 255, 0.3);
   padding-left: 16px;
+}
+@media (min-width: 320px) and (max-width: 1200px) {
+  .footer__registration-input {
+    width: 100%;
+  }
 }
 .footer__registration-button {
   width: 200px;
@@ -112,4 +143,31 @@
   align-items: center;
   justify-content: space-between;
   width: 570px;
+}
+@media (min-width: 320px) and (max-width: 1200px) {
+  .footer__registration-email-wrapper {
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+@media (min-width: 320px) and (max-width: 1200px) {
+  .footer__contacts-bellow-text {
+    text-align: center;
+  }
+}
+.footer__contacts-social-wrapper {
+  display: flex;
+}
+@media (min-width: 320px) and (max-width: 768px) {
+  .footer__contacts-social-wrapper {
+    flex-direction: column;
+  }
+}
+@media (min-width: 768px) and (max-width: 1200px) {
+  .footer__contacts-social-wrapper {
+    justify-content: space-around;
+    margin-bottom: 40px;
+  }
 }

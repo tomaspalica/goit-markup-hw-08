@@ -1,5 +1,5 @@
 .modal {
-  width: 528px;
+  max-width: 528px;
   height: 581px;
   background-color: #ffffff;
   margin: auto;
@@ -11,7 +11,14 @@
   transition-duration: 400ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   flex-direction: column;
-  
+  position: relative;
+}
+@media (min-width: 320px) and (max-width: 1200px) {
+  .modal {
+    max-width: 450px;
+    padding: 40px;
+    height: 609px;
+  }
 }
 .modal__button {
   border-radius: 100%;
@@ -24,6 +31,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media (min-width: 320px) and (max-width: 1200px) {
+  .modal__button {
+    margin-left: 0px;
+    position: absolute;
+    right: 8px;
+    top: 8px;
+  }
 }
 .modal__info {
   width: 100%;
@@ -68,6 +83,12 @@
   margin-right: 26px;
   border-width: 1px;
 }
+@media (min-width: 320px) and (max-width: 1200px) {
+  .modal__fieldset {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
 .modal__label {
   position: absolute;
   font-weight: 400;
@@ -92,7 +113,11 @@
     outline: 0px;
   }
 }
-
+@media (min-width: 320px) and (max-width: 1200px) {
+  .modal__input {
+    width: 333px;
+  }
+}
 .modal__icons {
   margin-left: 15px;
   fill: #212121;
@@ -109,6 +134,12 @@
   &:focus-within {
     border: 1px solid #2196f3;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+@media (min-width: 320px) and (max-width: 1200px) {
+  .modal__fieldset-comment {
+    margin-left: 0px;
+    margin-right: 0px;
   }
 }
 .modal__label-comment {
@@ -135,7 +166,11 @@
     outline: 0;
   }
 }
-
+@media (min-width: 320px) and (max-width: 1200px) {
+  .modal__textarea-comment {
+    width: 370px;
+  }
+}
 .modal__checkbox-wraper {
   position: relative;
   cursor: pointer;
@@ -151,6 +186,19 @@
 
   color: #757575;
   padding-left: 23px;
+}
+@media (min-width: 320px) and (max-width: 1200px) {
+  .modal__checkbox-wraper {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    /* identical to box height */
+
+    letter-spacing: 0.03em;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
 }
 .modal__checkbox {
   position: absolute;
@@ -186,7 +234,7 @@
   border-radius: 4px;
   border: 0px;
   cursor: pointer;
-  margin-top: 30px;
+
   font-weight: 700;
   font-size: 16px;
   line-height: 30px;
@@ -194,5 +242,11 @@
   letter-spacing: 0.06em;
 
   color: #ffffff;
-  margin-left: 150px;
+  margin: auto;
+  margin-top: 30px;
+}
+.modal__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }

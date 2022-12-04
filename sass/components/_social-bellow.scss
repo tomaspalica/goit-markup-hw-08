@@ -3,6 +3,12 @@
   padding-left: 0px;
   margin-top: 0px;
   margin-bottom: 0px;
+  gap: 10px;
+}
+@media (min-width: 320px) and (max-width: 1200px) {
+  .social-bellow__media {
+    justify-content: center;
+  }
 }
 .social-bellow__join-us {
   font-size: 14px;
@@ -17,6 +23,18 @@
 .social-bellow {
   margin-top: 12px;
   margin-left: 70px;
+}
+@media (min-width: 320px) and (max-width: 1200px) {
+  .social-bellow {
+    margin-left: 0px;
+    text-align: center;
+  }
+}
+@media (min-width: 320px) and (max-width: 768px) {
+  .social-bellow {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
 }
 .contacts-bellow__padding {
   padding-top: 9px;
