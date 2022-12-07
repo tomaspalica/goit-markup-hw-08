@@ -6,19 +6,29 @@
   .lorem-ipsum {
     flex-wrap: wrap;
     gap: 30px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+  @media (min-width: 768px) and (max-width: 1200px) {
+    .lorem-ipsum {
+      margin-bottom: 45px;
+    }
   }
 }
 @media (min-width: 1200px) {
   .lorem-ipsum {
     justify-content: space-between;
+    margin-right: auto;
+    margin-left: auto;
+    width: 1200px;
+    margin-top: 94px;
+    margin-bottom: 94px;
   }
 }
 .lorem-ipsum {
   display: flex;
 
   padding-left: 0px;
-  margin-top: 94px;
-  margin-bottom: 94px;
 }
 @media (max-width: 1200px) {
   .lorem-ipsum {
@@ -39,6 +49,8 @@
   line-height: 100%;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 @media (max-width: 768px) {
   .lorem-ipsum__titles {
@@ -53,7 +65,9 @@
   letter-spacing: 0.03em;
 
   color: #757575;
+  margin: 0px;
 }
+
 .lorem-ipsum__list {
   list-style-type: none;
   display: flex;

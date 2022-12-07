@@ -94,6 +94,7 @@
 @media (min-width: 320px) and (max-width: 1200px) {
   .footer__registration-fieldset {
     width: 100%;
+    max-width: 450px;
   }
 }
 .footer__registration-input {
@@ -157,10 +158,12 @@
     text-align: center;
   }
 }
-.footer__contacts-social-wrapper {
-  display: flex;
+@media (min-width: 768px) {
+  .footer__contacts-social-wrapper {
+    display: flex;
+  }
 }
-@media (min-width: 320px) and (max-width: 768px) {
+@media (min-width: 320px) and (max-width: 767px) {
   .footer__contacts-social-wrapper {
     flex-direction: column;
   }

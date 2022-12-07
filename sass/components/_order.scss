@@ -94,6 +94,11 @@
   align-items: center;
   justify-content: center;
 }
+@media (max-width: 1199px) {
+  .order {
+    height: 400px;
+  }
+}
 .order__headline {
   font-weight: 900;
   font-size: 44px;
@@ -122,6 +127,7 @@
     text-transform: uppercase;
 
     color: #ffffff;
+    padding-bottom: 0px;
   }
 }
 .order__button {
@@ -151,12 +157,12 @@
 }
 .order__headline-wrapper {
   margin-bottom: 30px;
-  @media screen and (min-width: 320px) {
+  @media screen and (min-width: 320px) and (max-width: 1999px) {
     margin-left: auto;
     margin-right: auto;
     width: 365px;
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1999px) {
     width: 365px;
   }
   @media screen and (min-width: 1200px) {
