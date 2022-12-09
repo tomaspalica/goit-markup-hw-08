@@ -58,12 +58,12 @@
   justify-content: center;
   align-items: center;
 }
-@media (min-width: 768px) and (max-width: 1200px) {
+@media (min-width: 768px) and (max-width: 1199px) {
   .clients__logos-container {
     width: 226px;
   }
 }
-@media (min-width: 480px) and (max-width: 768px) {
+@media (min-width: 480px) and (max-width: 767px) {
   .clients__logos-container {
     width: 210px;
   }

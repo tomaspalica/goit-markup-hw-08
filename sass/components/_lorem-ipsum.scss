@@ -2,14 +2,14 @@
   background-color: var(--background-color);
   width: 100%;
 }
-@media (max-width: 1200px) {
+@media (max-width: 1199px) {
   .lorem-ipsum {
     flex-wrap: wrap;
     gap: 30px;
     margin-top: 60px;
     margin-bottom: 60px;
   }
-  @media (min-width: 768px) and (max-width: 1200px) {
+  @media (min-width: 768px) and (max-width: 1199px) {
     .lorem-ipsum {
       margin-bottom: 45px;
     }
@@ -30,7 +30,7 @@
 
   padding-left: 0px;
 }
-@media (max-width: 1200px) {
+@media (max-width: 1199px) {
   .lorem-ipsum {
     justify-content: center;
   }
@@ -52,7 +52,7 @@
   margin-top: 30px;
   margin-bottom: 10px;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .lorem-ipsum__titles {
     text-align: center;
   }
