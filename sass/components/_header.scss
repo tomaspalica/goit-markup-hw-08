@@ -101,6 +101,16 @@
   bottom: -32px;
   left: 0;
 }
+@media (max-width: 1199px) {
+  .visited-p::after {
+    bottom: -28px;
+  }
+}
+@media (max-width: 1199px) {
+  .visited-a::after {
+    bottom: -28px;
+  }
+}
 .navigation__menu-list {
   list-style-type: none;
 }
