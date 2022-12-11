@@ -1,11 +1,21 @@
 .filters {
   display: flex;
   padding-left: 0px;
-  justify-content: center;
+
   gap: 8px;
   margin: 0 0;
   padding-top: 94px;
   padding-bottom: 50px;
+}
+@media (max-width: 767px) {
+  .filters {
+    flex-wrap: wrap;
+  }
+}
+@media (min-width: 768px) {
+  .filters {
+    justify-content: center;
+  }
 }
 .filters__button {
   cursor: pointer;

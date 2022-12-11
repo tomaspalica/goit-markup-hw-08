@@ -17,6 +17,78 @@
   </head>
   <body>
     <header>
+      <div class="mobile-menu__overley" data-menu>
+        <div class="mobile-menu">
+          <button class="mobile-menu__btn" type="button" data-menu-close>
+            <svg
+              class="mobile-menu__icon"
+              width="
+            18.67px"
+              height="
+            18.67px"
+            >
+              <use href="./images/icons.svg#icon-x"></use>
+            </svg>
+          </button>
+          <div class="mobile-menu__movement-contacts-social-wrapper">
+            <ul class="mobile-menu__movement">
+              <li>
+                <a class="mobile-menu__movement-links" href="./index.html"
+                  >Agencja</a
+                >
+              </li>
+              <li>
+                <a class="mobile-menu__movement-links" href="./portfolio.html"
+                  >Portfolio</a
+                >
+              </li>
+              <li>
+                <a class="mobile-menu__movement-links" href="./kontakt"
+                  >Kontakt</a
+                >
+              </li>
+            </ul>
+            <div>
+              <ul class="mobile-menu__contacts">
+                <li>
+                  <a
+                    class="mobile-menu__contacts-number"
+                    href="tel:+48111111111"
+                    >+48 111 111 111</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="mobile-menu__contacts-mail"
+                    href="info@devstudio.com"
+                    >info@devstudio.com</a
+                  >
+                </li>
+              </ul>
+              <ul class="mobile-menu__social-media">
+                <li class="mobile-menu__social-media-list">
+                  <a class="mobile-menu__social-media-links" href=""
+                    >Instagram</a
+                  >
+                </li>
+                <li class="mobile-menu__social-media-list">
+                  <a class="mobile-menu__social-media-links" href="">Twitter</a>
+                </li>
+                <li class="mobile-menu__social-media-list">
+                  <a class="mobile-menu__social-media-links" href=""
+                    >Facebook</a
+                  >
+                </li>
+                <li class="mobile-menu__social-media-list">
+                  <a class="mobile-menu__social-media-links" href=""
+                    >LinkedIn</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
       <section class="main-section">
         <div class="container">
           <div class="header__flex">
@@ -49,32 +121,35 @@
                 </ul>
               </nav>
             </div>
-            <div class="contact-wrapper">
-              <ul class="contacts">
-                <li class="contacts__list">
-                  <a
-                    class="contacts__info contatcs-width"
-                    href="mailto:info@devstudio.com"
-                  >
-                    <svg class="contacts__icon" height="12px">
-                      <use href="./images/icons.svg#icon-envelope"></use>
-                    </svg>
-                    <span>info@devstudio.com</span>
-                  </a>
-                </li>
-                <li class="contacts__list">
-                  <a
-                    class="contacts__info contatcs-width"
-                    href="tel:+48111111111"
-                  >
-                    <svg class="contacts__icon" width="10px" height="16px">
-                      <use href="./images/icons.svg#icon-smartphone"></use>
-                    </svg>
-                    <span>+48 111 111 111</span></a
-                  >
-                </li>
-              </ul>
-            </div>
+            <button data-menu-open class="menu-icon">
+              <svg width="24px" height="16px">
+                <use href="./images/icons.svg#icon-menu"></use>
+              </svg>
+            </button>
+            <ul class="contacts">
+              <li class="contacts__list">
+                <a
+                  class="contacts__info contatcs-width"
+                  href="mailto:info@devstudio.com"
+                >
+                  <svg class="contacts__icon" height="12px">
+                    <use href="./images/icons.svg#icon-envelope"></use>
+                  </svg>
+                  <span>info@devstudio.com</span>
+                </a>
+              </li>
+              <li class="contacts__list">
+                <a
+                  class="contacts__info contatcs-width"
+                  href="tel:+48111111111"
+                >
+                  <svg class="contacts__icon" width="10px" height="16px">
+                    <use href="./images/icons.svg#icon-smartphone"></use>
+                  </svg>
+                  <span>+48 111 111 111</span></a
+                >
+              </li>
+            </ul>
           </div>
         </div>
       </section>
@@ -103,12 +178,37 @@
           <li class="projects__list">
             <figure class="projects__box">
               <div class="projects__container">
-                <img
-                  src="./images/portfolio1.jpg"
-                  alt=""
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/portfolio/Pimg1-lg@1x.jpg 1x,
+                      ./images/portfolio/Pimg1-lg@2x.jpg 2x
+                    "
+                    type="image/jpg" />
+
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/portfolio/Pimg1-md@1x.jpg 1x,
+                      ./images/portfolio/Pimg1-md@2x.jpg 2x
+                    "
+                    type="image/jpg" />
+
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./images/portfolio/Pimg1-sm@1x.jpg 1x,
+                      ./images/portfolio/Pimg1-sm@2x.jpg 2x
+                    "
+                    type="image/jpg" />
+                  <img
+                    class="projects__img"
+                    src="./images/portfolio1.jpg"
+                    alt=""
+                    width="370"
+                    height="294"
+                /></picture>
                 <div class="projects__overlay">
                   <span class="projects__description">
                     Technocrack jest popularną platformą wykorzystywaną do
@@ -129,12 +229,41 @@
           <li class="projects__list">
             <figure class="projects__box">
               <div class="projects__container">
-                <img
-                  src="./images/portfolio2.jpg"
-                  alt=""
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/portfolio/Pimg2-lg@1x.jpg 1x,
+                      ./images/portfolio/Pimg2-lg@2x.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/portfolio/Pimg2-md@1x.jpg 1x,
+                      ./images/portfolio/Pimg2-md@2x.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./images/portfolio/Pimg2-sm@1x.jpg 1x,
+                      ./images/portfolio/Pimg2-sm@2x.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+                  <img
+                    class="projects__img"
+                    src="./images/portfolio2.jpg"
+                    alt=""
+                    width="370"
+                    height="294"
+                  />
+                </picture>
                 <div class="projects__overlay">
                   <span class="projects__description">
                     Technocrack jest popularną platformą wykorzystywaną do
@@ -157,12 +286,37 @@
           <li class="projects__list">
             <figure class="projects__box">
               <div class="projects__container">
-                <img
-                  src="./images/portfolio3.jpg"
-                  alt=""
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/portfolio/Pimg3-lg@1x.jpg 1x,
+                      ./images/portfolio/Pimg3-lg@2x.jpg 2x
+                    "
+                    type="image/jpg" />
+
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/portfolio/Pimg3-md@1x.jpg 1x,
+                      ./images/portfolio/Pimg3-md@2x.jpg 2x
+                    "
+                    type="image/jpg" />
+
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./images/portfolio/Pimg3-sm@1x.jpg 1x,
+                      ./images/portfolio/Pimg3-sm@2x.jpg 2x
+                    "
+                    type="image/jpg" />
+                  <img
+                    class="projects__img"
+                    src="./images/portfolio3.jpg"
+                    alt=""
+                    width="370"
+                    height="294"
+                /></picture>
                 <div class="projects__overlay">
                   <span class="projects__description">
                     Technocrack jest popularną platformą wykorzystywaną do
@@ -183,12 +337,37 @@
           <li class="projects__list">
             <figure class="projects__box">
               <div class="projects__container">
-                <img
-                  src="./images/portfolio4.jpg"
-                  alt=""
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/portfolio/Pimg4-lg@1x.jpg 1x,
+                      ./images/portfolio/Pimg4-lg@2x.jpg 2x
+                    "
+                    type="image/jpg" />
+
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/portfolio/Pimg4-md@1x.jpg 1x,
+                      ./images/portfolio/Pimg4-md@2x.jpg 2x
+                    "
+                    type="image/jpg" />
+
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./images/portfolio/Pimg4-sm@1x.jpg 1x,
+                      ./images/portfolio/Pimg4-sm@2x.jpg 2x
+                    "
+                    type="image/jpg" />
+                  <img
+                    class="projects__img"
+                    src="./images/portfolio4.jpg"
+                    alt=""
+                    width="370"
+                    height="294"
+                /></picture>
                 <div class="projects__overlay">
                   <span class="projects__description">
                     Technocrack jest popularną platformą wykorzystywaną do
@@ -209,12 +388,41 @@
           <li class="projects__list">
             <figure class="projects__box">
               <div class="projects__container">
-                <img
-                  src="./images/portfolio5.jpg"
-                  alt=""
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/portfolio/Pimg5-lg@1x.jpg 1x,
+                      ./images/portfolio/Pimg5-lg@2x.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/portfolio/Pimg5-md@1x.jpg 1x,
+                      ./images/portfolio/Pimg5-md@2x.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./images/portfolio/Pimg5-sm@1x.jpg 1x,
+                      ./images/portfolio/Pimg5-sm@2x.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+                  <img
+                    class="projects__img"
+                    src="./images/portfolio5.jpg"
+                    alt=""
+                    width="370"
+                    height="294"
+                  />
+                </picture>
                 <div class="projects__overlay">
                   <span class="projects__description">
                     Technocrack jest popularną platformą wykorzystywaną do
@@ -235,12 +443,41 @@
           <li class="projects__list">
             <figure class="projects__box">
               <div class="projects__container">
-                <img
-                  src="./images/portfolio6.jpg"
-                  alt=""
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/portfolio/Pimg6-lg@1x.jpg 1x,
+                      ./images/portfolio/Pimg6-lg@2x.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/portfolio/Pimg6-md@1x.jpg 1x,
+                      ./images/portfolio/Pimg6-md@2x.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./images/portfolio/Pimg6-sm@1x.jpg 1x,
+                      ./images/portfolio/Pimg6-sm@2x.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+                  <img
+                    class="projects__img"
+                    src="./images/portfolio6.jpg"
+                    alt=""
+                    width="370"
+                    height="294"
+                  />
+                </picture>
                 <div class="projects__overlay">
                   <span class="projects__description">
                     Technocrack jest popularną platformą wykorzystywaną do
@@ -261,12 +498,41 @@
           <li class="projects__list">
             <figure class="projects__box">
               <div class="projects__container">
-                <img
-                  src="./images/portfolio7.jpg"
-                  alt=""
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/portfolio/Pimg7-lg@1x.jpg 1x,
+                      ./images/portfolio/Pimg7-lg@2x.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/portfolio/Pimg7-md@1x.jpg 1x,
+                      ./images/portfolio/Pimg7-md@2x.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./images/portfolio/Pimg7-sm@1x.jpg 1x,
+                      ./images/portfolio/Pimg7-sm@2x.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+                  <img
+                    class="projects__img"
+                    src="./images/portfolio7.jpg"
+                    alt=""
+                    width="370"
+                    height="294"
+                  />
+                </picture>
                 <div class="projects__overlay">
                   <span class="projects__description">
                     Technocrack jest popularną platformą wykorzystywaną do
@@ -287,12 +553,41 @@
           <li class="projects__list">
             <figure class="projects__box">
               <div class="projects__container">
-                <img
-                  src="./images/portfolio8.jpg"
-                  alt=""
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/portfolio/Pimg8-lg@1x.jpg 1x,
+                      ./images/portfolio/Pimg8-lg@2x.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/portfolio/Pimg8-md@1x.jpg 1x,
+                      ./images/portfolio/Pimg8-md@2x.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./images/portfolio/Pimg8-sm@1x.jpg 1x,
+                      ./images/portfolio/Pimg8-sm@2x.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+                  <img
+                    class="projects__img"
+                    src="./images/portfolio8.jpg"
+                    alt=""
+                    width="370"
+                    height="294"
+                  />
+                </picture>
                 <div class="projects__overlay">
                   <span class="projects__description">
                     Technocrack jest popularną platformą wykorzystywaną do
@@ -313,12 +608,41 @@
           <li class="projects__list">
             <figure class="projects__box">
               <div class="projects__container">
-                <img
-                  src="./images/portfolio9.jpg"
-                  alt=""
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/portfolio/Pimg9-lg@1x.jpg 1x,
+                      ./images/portfolio/Pimg9-lg@2x.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/portfolio/Pimg9-md@1x.jpg 1x,
+                      ./images/portfolio/Pimg9-md@2x.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./images/portfolio/Pimg9-sm@1x.jpg 1x,
+                      ./images/portfolio/Pimg9-sm@2x.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+                  <img
+                    class="projects__img"
+                    src="./images/portfolio9.jpg"
+                    alt=""
+                    width="370"
+                    height="294"
+                  />
+                </picture>
                 <div class="projects__overlay">
                   <span class="projects__description">
                     Technocrack jest popularną platformą wykorzystywaną do
@@ -344,109 +668,111 @@
       <section class="footer__section">
         <div class="container">
           <div class="footer__contacts-bellow-wrapper footer__flex">
-            <div>
-              <a href="./index.html" class="logo__link">
-                <span class="logo__web">Web</span
-                ><span class="logo__webstudio-secondary">Studio</span></a
-              >
-              <ul class="footer__contacts-bellow">
-                <li class="footer__contacts-bellow-list">
-                  <address class="footer__contacts-bellow-address">
-                    m. Warszawa, Aleje Jerozolimskie 21
-                  </address>
-                </li>
-                <li
-                  class="contacts-bellow__padding footer__contacts-bellow-list"
+            <div class="footer__contacts-social-wrapper">
+              <div class="footer__contacts-bellow-text">
+                <a href="./index.html" class="logo__link">
+                  <span class="logo__web">Web</span
+                  ><span class="logo__webstudio-secondary">Studio</span></a
                 >
-                  <a
-                    class="footer__contacts-bellow-links"
-                    href="mailto:info@example.com"
-                    >info@example.com</a
+                <ul class="footer__contacts-bellow">
+                  <li class="footer__contacts-bellow-list">
+                    <address class="footer__contacts-bellow-address">
+                      m. Warszawa, Aleje Jerozolimskie 21
+                    </address>
+                  </li>
+                  <li
+                    class="contacts-bellow__padding footer__contacts-bellow-list"
                   >
-                </li>
-                <li
-                  class="contacts-bellow__padding footer__contacts-bellow-list"
-                >
-                  <a
-                    class="footer__contacts-bellow-links"
-                    href="tel:+48111111111"
-                    >+48 111 111 111</a
+                    <a
+                      class="footer__contacts-bellow-links"
+                      href="mailto:info@example.com"
+                      >info@example.com</a
+                    >
+                  </li>
+                  <li
+                    class="contacts-bellow__padding footer__contacts-bellow-list"
                   >
-                </li>
-              </ul>
-            </div>
-            <div class="social-bellow">
-              <h4 class="social-bellow__join-us">Dołącz do nas</h4>
-              <ul class="social-bellow__media">
-                <li class="social-platform__background">
-                  <svg
-                    class="social-platform__icons"
-                    width="44px"
-                    height="44px"
-                  >
-                    <use
-                      x="12"
-                      y="12"
-                      href="./images/icons.svg#icon-instagram"
-                      width="20px"
-                      height="20px"
-                    ></use>
-                  </svg>
-                </li>
-                <li class="social-platform__background">
-                  <svg
-                    class="social-platform__icons"
-                    width="44px"
-                    height="44px"
-                  >
-                    <use
-                      x="12"
-                      y="12"
-                      href="./images/icons.svg#icon-twitter"
-                      width="20px"
-                      height="20px"
-                    ></use>
-                  </svg>
-                </li>
-                <li class="social-platform__background">
-                  <svg
-                    class="social-platform__icons"
-                    width="44px"
-                    height="44px"
-                  >
-                    <use
-                      x="12"
-                      y="12"
-                      href="./images/icons.svg#icon-facebook"
-                      width="20px"
-                      height="20px"
-                    ></use>
-                  </svg>
-                </li>
-                <li class="social-platform__background">
-                  <svg
-                    class="social-platform__icons"
-                    width="44px"
-                    height="44px"
-                  >
-                    <use
-                      x="12"
-                      y="12"
-                      href="./images/icons.svg#icon-linkedin"
-                      width="20px"
-                      height="20px"
-                    ></use>
-                  </svg>
-                </li>
-              </ul>
+                    <a
+                      class="footer__contacts-bellow-links"
+                      href="tel:+48111111111"
+                      >+48 111 111 111</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="social-bellow">
+                <h4 class="social-bellow__join-us">Dołącz do nas</h4>
+                <ul class="social-bellow__media">
+                  <li class="social-platform__background">
+                    <svg
+                      class="social-platform__icons"
+                      width="44px"
+                      height="44px"
+                    >
+                      <use
+                        x="12"
+                        y="12"
+                        href="./images/icons.svg#icon-instagram"
+                        width="20px"
+                        height="20px"
+                      ></use>
+                    </svg>
+                  </li>
+                  <li class="social-platform__background">
+                    <svg
+                      class="social-platform__icons"
+                      width="44px"
+                      height="44px"
+                    >
+                      <use
+                        x="12"
+                        y="12"
+                        href="./images/icons.svg#icon-twitter"
+                        width="20px"
+                        height="20px"
+                      ></use>
+                    </svg>
+                  </li>
+                  <li class="social-platform__background">
+                    <svg
+                      class="social-platform__icons"
+                      width="44px"
+                      height="44px"
+                    >
+                      <use
+                        x="12"
+                        y="12"
+                        href="./images/icons.svg#icon-facebook"
+                        width="20px"
+                        height="20px"
+                      ></use>
+                    </svg>
+                  </li>
+                  <li class="social-platform__background">
+                    <svg
+                      class="social-platform__icons"
+                      width="44px"
+                      height="44px"
+                    >
+                      <use
+                        x="12"
+                        y="12"
+                        href="./images/icons.svg#icon-linkedin"
+                        width="20px"
+                        height="20px"
+                      ></use>
+                    </svg>
+                  </li>
+                </ul>
+              </div>
             </div>
             <div class="footer__registration">
               <form class="footer__registration-form">
+                <h2 class="footer__registration-info">
+                  Zapisz się do newslettera
+                </h2>
                 <div class="footer__registration-email-wrapper">
                   <fieldset class="footer__registration-fieldset">
-                    <label class="footer__registration-info">
-                      Zapisz się do newslettera</label
-                    >
                     <input
                       class="footer__registration-input"
                       type="email"

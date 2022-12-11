@@ -4,6 +4,7 @@
 }
 .footer__flex {
   display: flex;
+  justify-content: center;
 }
 @media (min-width: 320px) and (max-width: 1199px) {
   .footer__flex {

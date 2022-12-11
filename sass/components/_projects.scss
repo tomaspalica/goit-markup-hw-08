@@ -6,6 +6,7 @@
   padding-left: 0px;
   padding-bottom: 94px;
   margin: 0 0;
+  justify-content: center;
 }
 .projects__list {
   list-style-type: none;
@@ -72,4 +73,7 @@
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
   margin-top: -5px;
+}
+.projects__img {
+  width: 100%;
 }
